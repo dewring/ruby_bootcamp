@@ -1,4 +1,18 @@
-
+class Stock
+  def initialize(name,price)
+    @name = name
+    @price = price
+  end
+  def name
+    @name
+  end
+  def price
+    @price
+  end
+  def calculate(total_shares)
+    @price * total_shares
+  end
+end
 
 voo_stock = Stock.new("VOO", 37.5)
 nvidia_stock = Stock.new("NVD", 3504.12)
