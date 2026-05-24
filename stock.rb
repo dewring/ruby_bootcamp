@@ -1,4 +1,7 @@
 class Stock
+    class MinusSharesError < StandardError
+    end
+
   def initialize(name,price)
     @name = name
     @price = price
