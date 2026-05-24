@@ -10,7 +10,7 @@ class Animal
     }
   end
   def cry
-    "#{@name} is crying"
+    "#{@name} is crying very hard. auch"
   end
 end
 
