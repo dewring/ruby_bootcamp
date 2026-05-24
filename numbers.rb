@@ -31,7 +31,7 @@ puts "How many months old is Leika"
 puts "Leiks is #{ 12 * 4.7 } months"
 
 
-leika_months_number = 12 * 4.7
+leika_months_number = 12 * 5.1
 rounded_leika_months_number = leika_months_number.round(3)
 puts "Leiks is #{rounded_leika_months_number} months"
 
