@@ -9,6 +9,9 @@ class Stock
   def price
     @price
   end
+  def ticker
+    "#{@name}: $#{@price}"
+  end
   def calculate(total_shares)
     @price * total_shares
   end
