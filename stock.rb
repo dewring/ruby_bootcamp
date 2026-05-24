@@ -13,6 +13,9 @@ class Stock
     "#{@name}: $#{@price}"
   end
   def calculate(total_shares)
+    if total_shares < 1
+      raise MinusSharesError, 'Stockshars must be more 1'
+    end
     @price * total_shares
   end
 end
@@ -26,6 +29,6 @@ stocks.each do |stock|
   puts stock.ticker # VOO: $37.5
   puts stock.name # VOO
   puts stock.price # 37.5
-  total_shares = 5
+  total_shares = 0
   puts "#{total_shares} shares of #{stock.name} is #{stock.calculate(total_shares)}"
 end
