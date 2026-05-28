@@ -1,24 +1,24 @@
-# class Money
-#   def initialize(input_currency)
-#     @currency = input_currency
-#   end
+class Money
+  def initialize(input_currency)
+    @currency = input_currency
+  end
   
-#   def krw_to_other(krw)
-#     if @currency == "cad"
-#     krw * 0.001
-#     elsif @currency == "mxn"
-#     krw * 0.013
-#     elsif @currency == "usd"
-#     krw * 0.0007
-#     else
-#     raise "wrong currency"
-#     end
-#   end
+  def krw_to_other(krw)
+    if @currency == "cad"
+    krw * 0.001
+    elsif @currency == "mxn"
+    krw * 0.013
+    elsif @currency == "usd"
+    krw * 0.0007
+    else
+    raise "wrong currency"
+    end
+  end
 
-#   def current_currency
-#     @currency
-#   end
-# end
+  def current_currency
+    @currency
+  end
+end
 
 # calculator = Money.new("mxn")
 # puts calculator.current_currency
