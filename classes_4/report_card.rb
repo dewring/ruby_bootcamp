@@ -1,6 +1,8 @@
 class ReportCard
-  def set_student(student)
-    @student = student
+  #               Student
+  def set_student(babo)
+    # @student is Student
+    @student = babo
   end
   def set_booster(booster)
     @booster = booster
